@@ -5,7 +5,7 @@ class StudentsController < ApplicationController
     @students = Student.all
   end
 
-    def show
+  def show
     @student = set_student
       if @student.active
         @active_status = "This student is currently active."
